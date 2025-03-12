@@ -1,0 +1,273 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+header {
+    background: #3a0ca3;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    background: #560bad;
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s linear 1s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown-menu li {
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+    background: #3a0ca3;
+}
+
+/* Tampilkan dropdown saat hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #1a1a2e;
+    left: 0;
+    bottom: 3px;
+    transition: width 0.7s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 60%;
+}
+
+nav a:hover {
+    color: #1a1a2e;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chat-popup {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: #3a0ca3;
+    border-radius: 10px;
+    display: none;
+}
+
+.chat-header {
+    padding: 10px;
+    background: #560bad;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background: white;
+    color: black;
+}
+
+.chat-footer {
+    padding: 10px;
+    background: #560bad;
+}
+
+.admin-login {
+    text-align: center;
+    padding: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 160px;
+    background: #191919;
+    position: relative;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    /*width: 100%;*/
+    color: white;
+}
+
+footer .footer-msg {
+    text-align: fixed;
+    padding: 10px 0;
+}
+
+.products-list {
+    background-color: #a1a1a1;
+    color: white;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    /*width: 80%;*/
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
+}
+
+/*.carousel-wrapper::-webkit-scrollbar {
+    width: 0;
+}*/
+
+.carousel-track {
+    display: flex;
+}
+
+.product-card {
+    min-width: 250px;
+    margin: 10px;
+    background: #3a0ca3;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Naik sedikit saat hover */
+}
+
+.product-card i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover i {
+    transform: scale(1.2); /* Ikon membesar 20% */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.category {
+    font-size: 14px;
+    color: #c0c0c0;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.buy-btn {
+    background: #ffff;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.buy-btn:hover {
+    background: #e6b800;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 20px;
+}
+

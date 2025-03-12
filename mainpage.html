@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agung Store View</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>AGUNG STORE VIEW</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#products">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">ECU (Juken)</a></li>
+                        <li><a href="#">Exhaust</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a>Contact Guy</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="contact.html">Contact</a></li>-->
+                <!--<li><a href="admin.html">Admin</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>High-Quality Spareparts for Your Motorcycle</h2>
+            <p>Find the best spareparts with futuristic design.</p>
+        </section>
+        
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="carousel-container">
+                <!--<button class="prev" onclick="moveSlide(-1)">&#10094;</button>-->
+                <div class="carousel-wrapper" id="carousel">
+                    <div class="carousel-track">
+                        <div class="product-card">
+                            <i class="fas fa-tools fa-3x"></i>
+                            <h3>Accessories and Parts</h3>
+                            <p class="category">Others Accessories and Parts was here</p>
+                            <p class="price">Rp50.000-250.000/Unit</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product-card">
+                            <i class="fas fa-microchip fa-3x"></i>
+                            <h3>ECU (Juken)</h3>
+                            <p class="category">Change your vehicle sound</p>
+                            <p class="price">Rp200.000/Config</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product-card">
+                            <i class="fas fa-smoking fa-3x"></i>
+                            <h3>Exhaust</h3>
+                            <p class="category">No good cops for now</p>
+                            <p class="price">Rp550.000/Unit</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product-card">
+                            <i class="fas fa-folder fa-3x"></i>
+                            <h3>Others</h3>
+                            <p class="category">Check Others Product (if it already exist)</p>
+                            <p class="price">Rp30.000-120.000</p>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!--<button class="next" onclick="moveSlide(1)">&#10095;</button>-->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="footer-msg">&copy; 2025 Spareparts Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
